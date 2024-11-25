@@ -1,0 +1,20 @@
+name-template: 'v$NEXT_MINOR_VERSION'
+tag-template: 'v$NEXT_MINOR_VERSION'
+changelog-template: |
+  ## Changes
+  $CHANGES
+
+categories:
+  - title: '🚀 New Feature'
+    labels:
+      - 'enhancement'
+  - title: '🐛 Bug Fixes'
+    labels:
+      - 'bug'
+  - title: '🔧 Chores'
+    labels:
+      - 'chore'
+
+change-types:
+  - 'minor'
+  - 'patch'

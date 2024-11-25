@@ -1,0 +1,16 @@
+{
+  "name": "automate-release",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cmd /c echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Automate release notes and versioning",
+  "devDependencies": {
+    "standard-version": "^9.5.0"
+  }
+}
