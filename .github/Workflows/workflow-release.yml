@@ -5,7 +5,7 @@ on:
     types: [opened, labeled, unlabeled, synchronize]
   push:
     branches:
-      - main  # Replace with your default branch if different (e.g., master)
+      - main  # Replace with your default branch if it's different (e.g., master)
 
 jobs:
   draft-release-notes:
@@ -17,6 +17,6 @@ jobs:
       - name: Draft release notes
         uses: release-drafter/release-drafter@v5
         with:
-          config-name: '.github/release-drafter.yml'
+          config-name: '.github/release-drafter.yml'  # This is where the release drafter config is located
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # Use the GitHub Token from Secrets
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
